@@ -1,4 +1,5 @@
 extends layout
 
 block content
-  div#color
+  script(src = './javascripts/routeOne.js')
+  div.route1(id = 'divOne' onclick = 'javascript:changeColor();')
