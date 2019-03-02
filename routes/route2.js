@@ -1,13 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var colors = require("../colors.json");
+var object = require("../colors.json");
 
 
 
 /* GET home page. */
-router.get('/all', function(req, res, next) {
-
-  res.send('colors');
+router.get('/', function(req, res, next) {
+  res.send(object);
 });
+
 
 module.exports = router;
