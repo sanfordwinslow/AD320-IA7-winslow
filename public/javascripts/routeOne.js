@@ -1,13 +1,10 @@
 
 function changeColor() {
-  var div = document.getElementById('color').style.backgroundColor;
+  var div = document.getElementById('divOne');
 
-  div.addEventListener('click', function() {
-    div.style.backgroundColor = 'blue';
-  });
-
-  div.addEventListener('click', function() {
-    div.style.backgroundColor = 'red';
-  });
+  if(div.style.background === 'blue') {
+    div.style.background = 'red';
+  }else{
+    div.style.background = 'blue';
+  };
 };
-div.addEventListener('click', function(changeColor));
